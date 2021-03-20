@@ -10,6 +10,9 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { MostruarioComponent } from './pages/mostruario/mostruario.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
+import { ModelWrapperComponent } from './components/model/model-wrapper/model-wrapper.component';
+import { ModelSectionComponent } from './components/model/model-section/model-section.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { SobreComponent } from './pages/sobre/sobre.component';
     CadastroComponent,
     ContatoComponent,
     MostruarioComponent,
-    SobreComponent
+    SobreComponent,
+    ModelWrapperComponent,
+    ModelSectionComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
