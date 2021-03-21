@@ -6,4 +6,31 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  position: relative;
+
+}
+
+.header-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip: rect(auto auto auto auto);
+
+  header {
+    z-index: 3;
+    > h1 {
+      color: #fff;
+      font: 400 100px Montserrat, sans-serif;
+    }
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px #2e2e2d;
+
+
+  }
 }

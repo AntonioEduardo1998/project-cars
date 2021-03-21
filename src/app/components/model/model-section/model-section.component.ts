@@ -9,6 +9,7 @@ export class ModelSectionComponent implements OnInit {
 
   @Input() public color = '#fff';
   @Input() public img = '';
+  @Input() public model = '';
 
   constructor() { }
 
