@@ -1,4 +1,18 @@
-.container {
-  height: 100vh;
-  overflow-y: scroll;
+body{
+  background-color: rgb(223, 223, 223);
+}
+#sobre {
+  position: relative;
+  left: 10%;
+  top: 10%;
+  width: 550px;
+  height: 300px;
+	display: inline-block;
+  font-size: 1.2em;
+}
+.imagem{
+margin-top: 150px;
+width: 450px;
+height: 250px;
+border-radius: 45%;
 }
