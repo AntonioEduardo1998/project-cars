@@ -1,4 +1,28 @@
 .container {
+
+  padding: 50px;  
   height: 100vh;
   overflow-y: scroll;
+}
+
+.card {
+  max-width: 400px;
+  margin: 30px;
+  
+  
+}
+
+.card-header-image {
+  background-image: url('../../../assets/img/logo.png');
+  background-size: cover;
+  
+}
+
+
+.cards {
+  display: flex;
+}
+
+.mat-card {
+  background-color:  #b6b3b3 ;
 }

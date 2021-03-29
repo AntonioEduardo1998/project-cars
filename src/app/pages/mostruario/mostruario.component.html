@@ -1,4 +1,26 @@
 <app-header></app-header>
 <div class="container">
 
+    <section class="cards">
+        <mat-card class="card" *ngFor="let produto of produto">
+          <mat-card-header>
+            <div mat-card-avatar class="card-header-image"></div>
+            <mat-card-title>{{ produto.nome }}</mat-card-title>
+            <mat-card-subtitle>{{ produto.id }}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="{{ produto.foto }}" alt="Foto do produto">
+          <mat-card-subtitle>{{ produto.desc }}</mat-card-subtitle>
+          <mat-card-content>
+            <p>
+              As melhores  maquinas para os melhores pilotos!
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>CURTIR</button>
+        
+          </mat-card-actions>
+        </mat-card>
+      </section>
+
+
 </div>

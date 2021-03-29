@@ -1,0 +1,56 @@
+.home-prato {
+    display: flex;
+    max-width: 960px;
+    margin: auto;
+    margin-top: 25px;
+  }
+  
+  .home-prato-imagem {
+    flex: 1 0 350px;
+    max-height: 350px;
+  }
+  
+  .home-prato-conteudo {
+    margin-left: 30px;
+  }
+  
+  .home-prato-secao{
+    background-color: yellow;
+    box-sizing: content-box;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  
+  .home-prato-titulo{
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  .home-prato-preco{
+    font-size: 1.5em;
+    color: #eb0c0c;
+  }
+  
+  .home-prato-texto{
+    font-size: 1.5em;
+  }
+  
+  
+  .home-prato-titulo-ingredientes {
+    margin-top: 20px;
+  }
+  
+  .star {
+    color: #c7c7c7;
+  }
+  
+  .star-checked {
+    color: #ffdb0f;
+  }
+  
+  @media (max-width: 600px) {
+    .home-prato {
+      flex-wrap: wrap;
+    }
+  }

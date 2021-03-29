@@ -14,6 +14,7 @@ import { ModelWrapperComponent } from './components/model/model-wrapper/model-wr
 import { ModelSectionComponent } from './components/model/model-section/model-section.component';
 import { HeaderComponent } from './components/header/header.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { HeaderComponent } from './components/header/header.component';
     ModelWrapperComponent,
     ModelSectionComponent,
     HeaderComponent,
+   
   ],
   imports: [
     BrowserModule,
