@@ -8,11 +8,21 @@
   justify-content: center;
 
   .mat-card {
-    min-width: 300px;
+    min-width: 500px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > h1 {
+      font: 500 22px Roboto, sans-serif;
+      color: #2e2e2d;
+    }
   }
 
   form {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }

@@ -1,11 +1,13 @@
 .container {
-  padding: 50px;
+  padding: 90px 50px;
   height: 100vh;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 :host {
-  
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -15,14 +17,14 @@
 
 
 .example-label {
- 
+
   font-size: 14px;
   margin-left: 8px;
   min-width: 120px;
 }
 
 .example-button-row {
-  
+
   width: 490px;
 }
 

@@ -1,18 +1,19 @@
 <app-header></app-header>
 <div class="container">
   <mat-card>
+    <h1>Entrar</h1>
     <form class="firstForm" [formGroup]="login">
       <mat-form-field class="input-class">
         <mat-label>E-mail</mat-label>
-        <input matInput formControlName="email" required>
+        <input matInput formControlName="email" type="email" required>
       </mat-form-field>
       <mat-form-field class="input-class">
         <mat-label>Senha</mat-label>
-        <input matInput formControlName="password" required>
+        <input matInput formControlName="password" type="password" required>
       </mat-form-field>
-      <button color="primary" mat-flat-button>
+      <button (click)="entrar()" color="primary" mat-flat-button>
         Entrar
       </button>
-      </form>
+    </form>
   </mat-card>
 </div>
