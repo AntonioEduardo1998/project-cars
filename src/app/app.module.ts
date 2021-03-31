@@ -13,7 +13,7 @@ import { SobreComponent } from './pages/sobre/sobre.component';
 import { ModelWrapperComponent } from './components/model/model-wrapper/model-wrapper.component';
 import { ModelSectionComponent } from './components/model/model-section/model-section.component';
 import { HeaderComponent } from './components/header/header.component';
-
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { HeaderComponent } from './components/header/header.component';
     ModelWrapperComponent,
     ModelSectionComponent,
     HeaderComponent,
-   
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

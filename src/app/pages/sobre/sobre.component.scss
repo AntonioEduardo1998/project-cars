@@ -1,4 +1,18 @@
-.container {
-  height: 100vh;
-  overflow-y: scroll;
+.sobre{
+  margin-top:10%;
+  margin-left:30%;
+  height: 460px;
+  width: 700px;
+  border: 1px;
+  border-radius: 20px;
+  background-color:rgb(167, 167, 167);
+  filter:alpha(opacity=60);     
+  opacity: 0.6; 
 }
+.texto{
+  padding: 20px;
+  font-weight: bold;
+  }
+  .lorem{
+    padding: 30px;
+  }
