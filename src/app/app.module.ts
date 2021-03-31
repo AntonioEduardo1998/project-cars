@@ -15,6 +15,7 @@ import { ModelSectionComponent } from './components/model/model-section/model-se
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
 
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LoginComponent } from './pages/login/login.component';
     HeaderComponent,
     LoginComponent,
 
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
