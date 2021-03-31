@@ -20,11 +20,20 @@
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 
+
     nav {
       display: flex;
       height: 100%;
       align-items: center;
+      justify-content: space-between;
       padding: 0 20px;
+      width: 100%;
+
+      > div {
+        display: flex;
+        height: 100%;
+      }
+
 
       a {
         height: 100%;

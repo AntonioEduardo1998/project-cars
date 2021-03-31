@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="container">
+  <mat-card>
+    <form class="firstForm" [formGroup]="login">
+      <mat-form-field class="input-class">
+        <mat-label>E-mail</mat-label>
+        <input matInput formControlName="email" required>
+      </mat-form-field>
+      <mat-form-field class="input-class">
+        <mat-label>Senha</mat-label>
+        <input matInput formControlName="password" required>
+      </mat-form-field>
+      <button color="primary" mat-flat-button>
+        Entrar
+      </button>
+      </form>
+  </mat-card>
+</div>
