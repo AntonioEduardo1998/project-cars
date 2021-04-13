@@ -16,6 +16,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
 
 import { FooterComponent } from './components/footer/footer.component';
+import { CarrosService } from './services/carros.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,16 +31,18 @@ import { FooterComponent } from './components/footer/footer.component';
     ModelSectionComponent,
     HeaderComponent,
     LoginComponent,
-
     FooterComponent,
   ],
   imports: [
     BrowserModule,
     SharedModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    CarrosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

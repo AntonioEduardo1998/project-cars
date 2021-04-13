@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { produtos } from 'src/app/produto';
+import { CarrosService } from 'src/app/services/carros.service';
 
 @Component({
   selector: 'app-mostruario',
@@ -8,11 +9,13 @@ import { produtos } from 'src/app/produto';
 })
 export class MostruarioComponent implements OnInit {
 
-
-  produto = produtos;
-  constructor() { }
+  public produtos: any = [];
+  constructor(private carrosService: CarrosService) { }
 
   ngOnInit() {
+    this.carrosService.getCars().subscribe(res => {
+      this.produtos = res;
+    })
   }
 
 }

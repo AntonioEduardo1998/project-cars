@@ -1,16 +1,14 @@
 <div>
   <app-model-wrapper>
     <app-header></app-header>
-    <app-model-section [model]="'Audi R8'" [img]="'../assets/img/car1.jpg'"></app-model-section>
-    <app-model-section [model]="'Mercedes AMG'" [img]="'../assets/img/car2.jpg'"></app-model-section>
-    <app-model-section [model]="'Lamborghini'" [img]="'../assets/img/car3.jpg'"></app-model-section>
-    <app-model-section [model]="'BMW Sport'" [img]="'../assets/img/car4.jpg'"></app-model-section>
+    <app-model-section *ngFor="let carro of carros" [model]="carro.desc" [img]="carro.foto">
+    </app-model-section>
   </app-model-wrapper>
 
-  <section class="home-carro">
+  <!-- <section class="home-carro">
 
     <img class="home-carro-imagem" src="../../../assets/img/" alt="Carro Oferta">
-  
+
     <span class="home-carro-conteudo">
       <h2 class="home-carro-secao">Carro oferta</h2>
       <h1 class="home-carro-titulo">Audi</h1>
@@ -20,10 +18,10 @@
       <mat-icon class="star">star</mat-icon>
       <mat-icon class="star">star</mat-icon>
       <h2 class="home-carro-preco">R$ 50.000,00</h2>
-    
+
       <h2 class="home-carro-titulo-ingredientes">Acessorios</h2>
       <p class="home-carro-texto">vidro eletrico, alarme, direção hidraulica</p>
     </span>
-  
-  </section>
+
+  </section> -->
 </div>
