@@ -3,21 +3,18 @@
 </div>
 
 <body>
-  <div class="form">
-    <label class="titulo">Cadastro de Ofertas:</label>
-    <div class="div-modelo">
-      <label class="lbl">Modelo do Carro:</label><br>
-      <input class="modelo" placeholder="Digite o modelo do carro">
+  <form [formGroup]="registerForm" (ngSubmit)="handleRegisterForm()" class="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Modelo do carro:</mat-label>
+      <input placeholder="Digite o modelo do carro" formControlName="model" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Descrição do Carro:</mat-label><br>
+      <input placeholder="Digite a descrição do carro" formControlName="description" matInput>
+    </mat-form-field>
+    <div class="example-button-row">
+      <button type="submit" mat-stroked-button color="accent">Cadastrar</button>
     </div>
-    <div class="div-descricao">
-      <label class="lbl">Descricao do Carro:</label><br>
-      <input class="descricao" placeholder="Digite a descrição do carro">
-    </div>
-    <div class="div-imagem">
-      <label class="lbl">Imagem do Carro:</label><br>
-      <input type="file" name="arquivos" class="imagem" multiple />
-    </div>
-    <button class="btn-enviar">Cadastrar</button>
-  </div>
+  </form>
   <app-footer></app-footer>
 </body>

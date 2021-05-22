@@ -8,22 +8,126 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+
+$oc-yellow: (
+  50: #fff8e6,
+  100: #ffedc0,
+  200: #ffe196,
+  300: #ffd46c,
+  400: #ffcb4d,
+  500: #ffc22d,
+  600: #ffbc28,
+  700: #ffb422,
+  800: #ffac1c,
+  900: #ff9f11,
+  A100: #ffffff,
+  A200: #fffcf8,
+  A400: #ffe6c5,
+  A700: #ffdbac,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: white,
+  ),
+);
+
+$oc-dark-grey: (
+  50: #e6e6e6,
+  100: #c0c0c0,
+  200: #979796,
+  300: #6d6d6c,
+  400: #4d4d4d,
+  500: #2e2e2d,
+  600: #292928,
+  700: #232322,
+  800: #1d1d1c,
+  900: #121211,
+  A100: #f2f266,
+  A200: #eeee37,
+  A400: #f2f200,
+  A700: #d9d900,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: white,
+  ),
+);
+
+$oc-red: (
+  50: #feeded,
+  100: #fdd3d3,
+  200: #fbb6b6,
+  300: #f99999,
+  400: #f88383,
+  500: #f76d6d,
+  600: #f66565,
+  700: #f55a5a,
+  800: #f35050,
+  900: #f13e3e,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffd9d9,
+  A700: #ffbfbf,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: $black-87-opacity,
+    A700: white,
+  ),
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$project-cars-primary: mat-palette($mat-indigo);
-$project-cars-accent: mat-palette($mat-pink, A200, A100, A400);
+// mandatory stuff for theming
+$oc-primary: mat-palette($oc-yellow);
+$oc-accent: mat-palette($oc-dark-grey);
+$oc-warn: mat-palette($oc-red);
 
-// The warn palette is optional (defaults to red).
-$project-cars-warn: mat-palette($mat-red);
+
+$oc-primary: mat-palette($oc-yellow);
+$oc-accent: mat-palette($oc-dark-grey);
+$oc-warn: mat-palette($oc-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
 $project-cars-theme: mat-light-theme((
   color: (
-    primary: $project-cars-primary,
-    accent: $project-cars-accent,
-    warn: $project-cars-warn,
+    primary: $oc-primary,
+    accent: $oc-accent,
+    warn: $oc-warn,
   )
 ));
 

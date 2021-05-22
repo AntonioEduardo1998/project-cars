@@ -1,26 +1,22 @@
 <app-header></app-header>
 <div class="container">
-  <div>
-    <mat-form-field appearance="fill">
+  <form [formGroup]="contactForm" (ngSubmit)="handleContactForm()">
+    <mat-form-field appearance="outline">
       <mat-label>Nome</mat-label>
-      <input matInput>
+      <input formControlName="name" matInput>
     </mat-form-field>
-  </div>
-  <div>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="outline">
       <mat-label>E-mail</mat-label>
-      <input matInput>
+      <input formControlName="email" matInput>
     </mat-form-field>
-  </div>
-  <div>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="outline">
       <mat-label>Escreva seu texto:</mat-label>
-      <textarea matInput></textarea>
+      <textarea formControlName="description" matInput></textarea>
     </mat-form-field>
-    <mat-divider></mat-divider>
     <div class="example-button-row">
-      <button mat-raised-button color="primary">Enviar</button>
+      <button mat-flat-button color="accent">Enviar</button>
     </div>
-  </div>
+  </form>
+
   <app-footer></app-footer>
 </div>

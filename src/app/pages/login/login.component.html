@@ -3,15 +3,15 @@
   <mat-card>
     <h1>Entrar</h1>
     <form class="firstForm" [formGroup]="login">
-      <mat-form-field class="input-class">
+      <mat-form-field appearance="outline">
         <mat-label>E-mail</mat-label>
         <input matInput formControlName="email" type="email" required>
       </mat-form-field>
-      <mat-form-field class="input-class">
+      <mat-form-field appearance="outline">
         <mat-label>Senha</mat-label>
         <input matInput formControlName="password" type="password" required>
       </mat-form-field>
-      <button (click)="entrar()" color="primary" mat-flat-button>
+      <button (click)="entrar()" color="accent" mat-flat-button>
         Entrar
       </button>
     </form>
