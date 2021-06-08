@@ -2,13 +2,21 @@
 <div class="container">
 
   <section class="cards">
+
     <mat-card class="card" *ngFor="let produto of produtos">
+
+
       <mat-card-header>
+
         <div mat-card-avatar class="card-header-image"></div>
+
         <mat-card-title>{{ produto.nome }}</mat-card-title>
+
         <mat-card-subtitle>{{ produto.id }}</mat-card-subtitle>
+
       </mat-card-header>
       <img mat-card-image src="{{ produto.foto }}" alt="Foto do produto">
+
       <mat-card-subtitle>{{ produto.desc }}</mat-card-subtitle>
       <mat-card-content>
         <p>
@@ -16,7 +24,21 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>CURTIR</button>
+        <div>
+        <!-- <button mat-button>CURTIR</button> -->
+        <div id="compra">
+        <button mat-raised-button color="primary">Comprar</button>
+        </div>
+
+        <div id="fecha">
+          <button mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
+            <mat-icon>close</mat-icon>
+          </button>
+
+
+
+        </div>
+      </div>
 
       </mat-card-actions>
     </mat-card>
